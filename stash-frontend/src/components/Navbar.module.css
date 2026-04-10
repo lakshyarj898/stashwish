@@ -1,0 +1,63 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Glass Effect */
+  background: rgba(255, 255, 255, 0.05); 
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  
+  /* Layout: Stretching to corners */
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  
+  position: relative;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  font-family: 'Poppins', sans-serif;
+  flex-shrink: 0; /* Prevents logo from squishing */
+}
+
+/* 1. Remove that white toggle button from the middle */
+.menuToggle {
+  display: none !important; 
+}
+
+/* 2. Place buttons horizontally and remove bullets */
+.navLinks {
+  display: flex;       /* Forces horizontal row */
+  flex-direction: row; /* Ensures they stay side-by-side */
+  gap: 2rem;
+  list-style: none;    /* Removes those black dots/bullets */
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Keeps text on one line */
+}
+
+.navLinks li a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/* Ensure mobile styles don't break the horizontal layout on desktop */
+@media (max-width: 768px) {
+  /* Only show the toggle if you actually want a mobile menu later */
+  /* For now, keeping it simple as per your request */
+}

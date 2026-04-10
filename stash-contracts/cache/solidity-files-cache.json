@@ -1,0 +1,41 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\tejas\\OneDrive\\Desktop\\StashWish-main\\stash-contracts\\contracts\\StashWish.sol": {
+      "lastModificationDate": 1774344986330,
+      "contentHash": "3e37e71b3e8bdc624d4f3407264d2e09",
+      "sourceName": "contracts/StashWish.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "StashWish"
+      ]
+    }
+  }
+}

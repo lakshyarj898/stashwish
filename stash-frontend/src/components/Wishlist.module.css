@@ -1,0 +1,102 @@
+.card {
+  /* Glass Core */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  
+  /* Border & Shape */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+  
+  /* Shadow: Soft & Deep */
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.flair {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  /* Glassy flair tag */
+  background: rgba(255, 224, 102, 0.2); 
+  backdrop-filter: blur(4px);
+  color: #ffe066;
+  border: 1px solid rgba(255, 224, 102, 0.3);
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 20px; /* Pill shape looks better on glass */
+  font-weight: 600;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff; /* White text pops better on dark silk */
+  text-shadow: 0 0 10px rgba(127, 90, 240, 0.5); /* Purple glow */
+}
+
+.amount, .progressText {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7); /* Slightly dimmed white */
+}
+
+.progressBar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #7f5af0, #ff6ec4);
+  box-shadow: 0 0 10px rgba(127, 90, 240, 0.6); /* Makes the bar "light up" */
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+
+.unlockBtn {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: rgba(36, 195, 106, 0.2); /* Semi-transparent green */
+  color: #24c36a;
+  border: 1px solid rgba(36, 195, 106, 0.4);
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.unlockBtn:hover {
+  background: #24c36a;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(36, 195, 106, 0.5);
+}
+
+.deleteBtn {
+  margin-top: 0.5rem;
+  padding: 0.4rem 1rem;
+  background: transparent;
+  color: rgba(231, 76, 60, 0.8);
+  border: 1px solid rgba(231, 76, 60, 0.3);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background: rgba(231, 76, 60, 0.1);
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
